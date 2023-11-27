@@ -15,7 +15,7 @@ const CardFront = ({ formData }) => {
     height: "25px",
     backgroundColor: "rgba(52, 152, 219, 0.5)",
     borderRadius: "50%",
-    border: "1px solid white", 
+    border: "1px solid white",
     left: "25%",
     position: "absolute",
     top: "20%",
@@ -29,7 +29,14 @@ const CardFront = ({ formData }) => {
         {" "}
         {formData.name}
       </div>
-      <div style={{ left: "10%", position: "absolute", top: "50%" }}>
+      <div
+        style={{
+          left: "10%",
+          position: "absolute",
+          top: "50%",
+          letterSpacing: "5px",
+        }}
+      >
         {" "}
         {formData.cardNumber}
       </div>

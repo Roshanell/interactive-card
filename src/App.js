@@ -20,6 +20,9 @@ function App() {
     });
   };
   return (
+    // to do- set max len on inputs
+    // add functionality to submit button
+    // go to next page when submitted
     <div>
       <div className="background"></div>
       <Form formData={formData} handleChange={handleChange} />

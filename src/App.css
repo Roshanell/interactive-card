@@ -8,4 +8,7 @@
 body {
   position: relative;
   color: white;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
 }
