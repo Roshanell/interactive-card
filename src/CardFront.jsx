@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const CardFront = () => {
   return (
-    <div>CardFront</div>
-  )
-}
+    <div>
+      CardFront
+      <img src={require("../src/images/bg-card-front.png")} />
+    </div>
+  );
+};
 
-export default CardFront
+export default CardFront;
