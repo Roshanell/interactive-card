@@ -3,7 +3,6 @@ import "./App.css";
 import Form from "./Form";
 import CardFront from "./CardFront";
 import CardBack from "./CardBack";
-import { BackgroundSider } from "./BackgroundSider";
 
 function App() {
   const [formData, setFormData] = React.useState({
@@ -21,8 +20,8 @@ function App() {
     });
   };
   return (
-    <div className="App">
-      <BackgroundSider />
+    <div>
+      <div className="background"></div>
       <Form formData={formData} handleChange={handleChange} />
       <CardFront formData={formData} handleChange={handleChange} />
       <CardBack formData={formData} handleChange={handleChange} />

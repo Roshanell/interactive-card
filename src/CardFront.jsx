@@ -1,15 +1,8 @@
 import React from "react";
 
 const CardFront = ({ formData }) => {
-  // const [formData, setFormData] = React.useState({
-  //   name: "",
-  //   cardNumber: "",
-  //   expirationMonth: "",
-  //   expirationYear: "",
-  //   cvv:
-
   return (
-    <div>
+    <div style={{ left: "10%", position: "absolute", top: "0%" }}>
       CardFront
       <img src={require("../src/images/bg-card-front.png")} />
       <div> {formData.name}</div>
