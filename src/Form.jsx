@@ -4,7 +4,6 @@ const Form = ({ formData, handleChange }) => {
   return (
     <div>
       <div style={{ left: "60%", position: "absolute", top: "10%" }}>
-        Form
         <div className="form-control w-full max-w-xs">
           <label className="label">
             <span className="label-text">Cardholder Name</span>
