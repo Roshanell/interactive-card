@@ -2,12 +2,12 @@ import React from "react";
 
 const CardBack = ({ formData }) => {
   return (
-    <div style={{ position: "absolute", left: "15%", top:"50%"}}>
+    <div style={{ position: "absolute", left: "15%", top: "50%" }}>
       CardBack
       <img src={require("../src/images/bg-card-back.png")} />
-      <div>{formData.expirationMonth}</div>
-      <div>{formData.expirationYear}</div>
-      <div>{formData.cvv}</div>
+      <div style={{ right: "10%", position: "absolute", top: "50%" }}>
+        {formData.cvv}
+      </div>
     </div>
   );
 };
