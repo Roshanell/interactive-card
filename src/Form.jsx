@@ -1,6 +1,20 @@
 import React from "react";
 
 const Form = () => {
+  const [formData, setFormData] = React.useState({
+    name: "",
+    cardNumber: "",
+    expirationMonth: "",
+    expirationYear: "",
+    cvv: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: [e.target.value],
+    });
+  };
   return (
     <div>
       Form
@@ -12,6 +26,11 @@ const Form = () => {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
+          required
+          name="name"
+          id="name"
+          value={formData.name}
+          onChange={handleChange}
         />
       </div>
       <div className="form-control w-full max-w-xs">
@@ -22,6 +41,11 @@ const Form = () => {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
+          required
+          name="cardNumber"
+          id="cardNumber"
+          value={formData.cardNumber}
+          onChange={handleChange}
         />
       </div>
       <div className="form-control w-full max-w-xs">
@@ -32,6 +56,11 @@ const Form = () => {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
+          required
+          name="expirationMonth"
+          id="expirationMonth"
+          value={formData.expirationMonth}
+          onChange={handleChange}
         />
       </div>
       <div className="form-control w-full max-w-xs">
@@ -42,6 +71,11 @@ const Form = () => {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
+          required
+          name="expirationYear"
+          id="expirationYear"
+          value={formData.expirationYear}
+          onChange={handleChange}
         />
       </div>
       <div className="form-control w-full max-w-xs">
@@ -52,6 +86,11 @@ const Form = () => {
           type="text"
           placeholder="Type here"
           className="input input-bordered w-full max-w-xs"
+          required
+          name="cvv"
+          id="cvv"
+          value={formData.cvv}
+          onChange={handleChange}
         />
       </div>
     </div>
