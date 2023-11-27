@@ -22,8 +22,8 @@ function App() {
   return (
     <div className="App">
       <Form formData={formData} handleChange={handleChange} />
-      <CardFront />
-      <CardBack />
+      <CardFront formData={formData} handleChange={handleChange} />
+      <CardBack formData={formData} handleChange={handleChange} />
     </div>
   );
 }
