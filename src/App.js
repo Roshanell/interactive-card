@@ -13,6 +13,13 @@ function App() {
     cvv: "",
   });
 
+  const initialFormData = {
+    name: "",
+    cardNumber: "",
+    expirationMonth: "",
+    expirationYear: "",
+    cvv: "",
+  };
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -25,9 +32,25 @@ function App() {
     // go to next page when submitted
     <div>
       <div className="background"></div>
-      <Form formData={formData} handleChange={handleChange} />
-      <CardFront formData={formData} handleChange={handleChange} />
-      <CardBack formData={formData} handleChange={handleChange} />
+      <Form
+        formData={formData}
+        handleChange={handleChange}
+        initialFormData={initialFormData}
+        setFormData={setFormData}
+      />
+
+      <CardFront
+        formData={formData}
+        handleChange={handleChange}
+        initialFormData={initialFormData}
+        setFormData={setFormData}
+      />
+      <CardBack
+        formData={formData}
+        handleChange={handleChange}
+        initialFormData={initialFormData}
+        setFormData={setFormData}
+      />
     </div>
   );
 }

@@ -1,6 +1,10 @@
 import React from "react";
 
-const Form = ({ formData, handleChange }) => {
+const Form = ({ formData, handleChange, setFormData, initialFormData }) => {
+  const handleSubmit = (e) => {
+    setFormData(initialFormData);
+  };
+
   return (
     <div style={{ color: "black" }}>
       <div style={{ left: "60%", position: "absolute", top: "10%" }}>
@@ -79,7 +83,12 @@ const Form = ({ formData, handleChange }) => {
             value={formData.cvv}
             onChange={handleChange}
           />
-          <button style={{ marginTop: "10%" }} className="btn btn-wide">
+          <button
+            type="submit"
+            style={{ marginTop: "10%" }}
+            className="btn btn-wide"
+            onClick={handleSubmit}
+          >
             Confirm
           </button>
         </div>
