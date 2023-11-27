@@ -1,20 +1,7 @@
 import React from "react";
 
-const Form = () => {
-  const [formData, setFormData] = React.useState({
-    name: "",
-    cardNumber: "",
-    expirationMonth: "",
-    expirationYear: "",
-    cvv: "",
-  });
+const Form = ({formData, handleChange}) => {
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: [e.target.value],
-    });
-  };
   return (
     <div>
       Form
