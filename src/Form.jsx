@@ -3,11 +3,9 @@ import React from "react";
 const Form = ({
   formData,
   handleChange,
-  setFormData,
-  initialFormData,
   currentStep,
   handleNextStep,
-  handleFormReset
+  handleFormReset,
 }) => {
   return (
     <form style={{ color: "black" }}>
@@ -81,7 +79,6 @@ const Form = ({
             maxLength={3}
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
-            required
             name="cvv"
             id="cvv"
             value={formData.cvv}
@@ -91,7 +88,8 @@ const Form = ({
             type="submit"
             style={{ marginTop: "10%" }}
             className="btn btn-wide"
-            onClick={currentStep !=3 ? handleNextStep : handleFormReset}
+            onClick={currentStep != 3 ? handleNextStep : handleFormReset}
+            
           >
             Confirm
           </button>
