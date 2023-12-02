@@ -1,12 +1,16 @@
 import React from "react";
 
-const Form = ({ formData, handleChange, setFormData, initialFormData }) => {
-  const handleSubmit = (e) => {
-    setFormData(initialFormData);
-  };
-
+const Form = ({
+  formData,
+  handleChange,
+  setFormData,
+  initialFormData,
+  currentStep,
+  handleNextStep,
+  handleFormReset
+}) => {
   return (
-    <div style={{ color: "black" }}>
+    <form style={{ color: "black" }}>
       <div style={{ left: "60%", position: "absolute", top: "10%" }}>
         <div className="form-control w-full max-w-xs">
           <label className="label">
@@ -87,13 +91,13 @@ const Form = ({ formData, handleChange, setFormData, initialFormData }) => {
             type="submit"
             style={{ marginTop: "10%" }}
             className="btn btn-wide"
-            onClick={handleSubmit}
+            onClick={currentStep !=3 ? handleNextStep : handleFormReset}
           >
             Confirm
           </button>
         </div>
       </div>
-    </div>
+    </form>
   );
 };
 
