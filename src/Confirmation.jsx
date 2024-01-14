@@ -29,9 +29,7 @@ const Confirmation = ({ handleFormReset }) => {
         {" "}
         Thank you!
       </h2>
-      <span style={{ color: "hsl(270 3% 87%)" }}>
-        We've added your card details
-      </span>
+      <span style={{ color: "black" }}>We've added your card details</span>
       <button
         className="btn btn-outline"
         onClick={handleFormReset}
