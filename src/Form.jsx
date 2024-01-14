@@ -30,7 +30,7 @@ const Form = ({
             <span className="label-text">Card Number</span>
           </label>
           <input
-            type="number"
+            type="text"
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
             required
@@ -38,6 +38,7 @@ const Form = ({
             id="cardNumber"
             value={formData.cardNumber}
             onChange={handleChange}
+            maxLength={16}
           />
         </div>
         <div className="form-control w-full max-w-xs">
@@ -45,7 +46,7 @@ const Form = ({
             <span className="label-text">Month</span>
           </label>
           <input
-            type="number"
+            type="text"
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
             required
@@ -53,6 +54,7 @@ const Form = ({
             id="expirationMonth"
             value={formData.expirationMonth}
             onChange={handleChange}
+            maxLength={2}
           />
         </div>
         <div className="form-control w-full max-w-xs">
@@ -60,7 +62,7 @@ const Form = ({
             <span className="label-text">Year</span>
           </label>
           <input
-            type="number"
+            type="text"
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"
             required
@@ -68,6 +70,7 @@ const Form = ({
             id="expirationYear"
             value={formData.expirationYear}
             onChange={handleChange}
+            maxLength={4}
           />
         </div>
         <div className="form-control w-full max-w-xs">
@@ -75,7 +78,7 @@ const Form = ({
             <span className="label-text">CVV</span>
           </label>
           <input
-            type="number"
+            type="text"
             maxLength={3}
             placeholder="Type here"
             className="input input-bordered w-full max-w-xs"

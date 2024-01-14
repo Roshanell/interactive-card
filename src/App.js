@@ -4,6 +4,7 @@ import Form from "./Form";
 import CardFront from "./CardFront";
 import CardBack from "./CardBack";
 import Confirmation from "./Confirmation";
+import { kMaxLength } from "buffer";
 
 function App() {
   const [currentStep, setCurrentStep] = React.useState(1);
@@ -23,11 +24,28 @@ function App() {
     expirationYear: "",
     cvv: "",
   };
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: [e.target.value],
-    });
+    const { name, value } = e.target;
+
+    // Define regex patterns for specific fields
+    const regexPatterns = {
+      cardNumber: /^[0-9]*$/, // Allow only numeric characters for cardNumber
+      name: /.*/, // Allow any characters for otherField (no restriction)
+      expirationMonth: /^[0-9]*$/,
+      expirationYear: /^[0-9]*$/,
+      cvv: /^[0-9]*$/,
+    };
+
+    // Apply regex pattern based on the field name
+    const regexPattern = regexPatterns[name];
+
+    if (regexPattern.test(value)) {
+      setFormData((prevData) => ({
+        ...prevData,
+        [name]: value,
+      }));
+    }
   };
 
   const handleNextStep = (e) => {
@@ -52,6 +70,7 @@ function App() {
     setCurrentStep(1);
     setFormData(initialFormData);
   };
+
   return (
     <div>
       <div className="background"></div>
