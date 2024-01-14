@@ -41,7 +41,7 @@ const CardFront = ({ formData }) => {
         {formData.cardNumber}
       </div>
       <div style={{ right: "15%", position: "absolute", top: "80%" }}>
-        {formData.expirationMonth}
+        {formData.expirationMonth}/
       </div>
       <div style={{ right: "05%", position: "absolute", top: "80%" }}>
         {formData.expirationYear}
