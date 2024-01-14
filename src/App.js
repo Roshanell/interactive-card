@@ -35,9 +35,9 @@ function App() {
     if (
       !formData.cardNumber ||
       !formData.name ||
-      formData.expirationMonth ||
-      formData.expirationYear ||
-      formData.cvv
+      !formData.expirationMonth ||
+      !formData.expirationYear ||
+      !formData.cvv
     ) {
       alert("Please ensure the form is filled out properly");
     } else {
