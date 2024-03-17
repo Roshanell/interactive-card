@@ -1,3 +1,31 @@
+**Project Title: Interactive Card**
+
+### Overview:
+
+This React project provides a hands-on opportunity to apply React skills while mastering form validation techniques. I was able to deepen my understanding of state management, component composition, and event handling.
+
+![Card Generator](image.png)
+![Confirmation of Submission](image-1.png)
+
+### Features:
+
+1. **Form Validation:** Implement form validation logic using React's state and props to manage user input and feedback.
+2. **Component Composition:** Break down the UI into reusable components, fostering code modularity and maintainability.
+3. **State Management:** Utilize React state to store and update form data, ensuring seamless synchronization between components.
+4. **Event Handling:** Handle user interactions and form submissions using React event handlers, facilitating dynamic updates and error handling.
+5. **Conditional Rendering:** Employ conditional rendering techniques to display error messages and validation cues based on user input.
+6. **CSS Styling:** Apply CSS styles to enhance the visual appeal and usability of the form, adhering to best practices in responsive design.
+
+### Learning Outcomes:
+
+I was able to practice a range of React skills, including:
+
+1. **State and Props:** Proficiency in managing component state and passing data between parent and child components using props.
+2. **Event Handling:** Handle user interactions such as form submissions, input changes, and button clicks using React event system.
+3. **Conditional Rendering:** Conditionally rendering components and elements based on state and other conditions.
+4. **Form Validation Techniques:** Explore various strategies for form validation within a React context, including input validation, error handling, and feedback mechanisms.
+5. **Component Reusability:** Practice creating reusable components that can be easily integrated into different parts of the application, promoting code reusability and maintainability.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -11,9 +39,6 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
@@ -26,46 +51,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# interactive-card
