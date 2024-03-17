@@ -91,7 +91,7 @@ const Form = ({
             type="submit"
             style={{ marginTop: "10%" }}
             className="btn btn-wide"
-            onClick={currentStep != 3 ? handleNextStep : handleFormReset}
+            onClick={currentStep !== 3 ? handleNextStep : handleFormReset}
           >
             Confirm
           </button>

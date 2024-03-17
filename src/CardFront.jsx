@@ -24,7 +24,7 @@ const CardFront = ({ formData }) => {
     <div style={{ left: "10%", position: "absolute", top: "10%" }}>
       <div style={largeCircle}> </div>
       <div style={transparentCircle}></div>
-      <img src={require("../src/images/bg-card-front.png")} />
+      <img src={require("../src/images/bg-card-front.png")} alt="" />
       <div style={{ left: "10%", position: "absolute", top: "80%" }}>
         {" "}
         {formData.name}
