@@ -17,6 +17,7 @@ const Confirmation = ({ handleFormReset }) => {
       <img
         src={completeSVG}
         style={{ height: "2em", width: "2em", marginLeft: "7em" }}
+        alt="complete icon"
       />
       <h2
         style={{
