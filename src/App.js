@@ -4,7 +4,6 @@ import Form from "./Form";
 import CardFront from "./CardFront";
 import CardBack from "./CardBack";
 import Confirmation from "./Confirmation";
-import { kMaxLength } from "buffer";
 
 function App() {
   const [currentStep, setCurrentStep] = React.useState(1);
