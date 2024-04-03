@@ -5,7 +5,7 @@ const CardFront = ({ formData }) => {
   return (
     <div className="absolute top-14 left-24">
       {/* circles */}
-      <div className="absolute left-10 top-10 w-12 h-12 rounded-full bg-white"></div>
+      <div className="absolute left-12 top-10 w-12 h-12 rounded-full bg-white"></div>
       <div className="absolute left-24 top-10 w-6 h-6 rounded-full border border-white"></div>
       <img src={require("../src/images/bg-card-front.png")} alt="" />
       {/* card info */}
