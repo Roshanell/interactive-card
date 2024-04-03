@@ -16,10 +16,10 @@ const CardFront = ({ formData }) => {
       >
         {formData.cardNumber}
       </div>
-      <div className="absolute right-15 top-80">
-        {formData.expirationMonth}/
+      <div className="absolute right-16 top-52">
+        {formData.expirationMonth} /
       </div>
-      <div className="absolute right-5 top-80 expiration-year">
+      <div className="absolute right-4 top-52 expiration-year">
         {formData.expirationYear}
       </div>
     </div>
