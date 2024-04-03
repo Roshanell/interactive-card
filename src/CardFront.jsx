@@ -1,49 +1,23 @@
 import React from "react";
+import "./App.css";
 
 const CardFront = ({ formData }) => {
-  const largeCircle = {
-    left: "10%",
-    position: "absolute",
-    top: "20%",
-    borderRadius: "50%",
-    backgroundColor: "white",
-    width: "50px",
-    height: "50px",
-  };
-  const transparentCircle = {
-    width: "25px",
-    height: "25px",
-    backgroundColor: "rgba(52, 152, 219, 0.5)",
-    borderRadius: "50%",
-    border: "1px solid white",
-    left: "25%",
-    position: "absolute",
-    top: "20%",
-  };
   return (
-    <div style={{ left: "10%", position: "absolute", top: "10%" }}>
-      <div style={largeCircle}> </div>
-      <div style={transparentCircle}></div>
+    <div className="absolute top-14 left-24 card-container">
+      <div className="absolute left-10 top-20 w-12 h-12 rounded-full bg-white large-circle"></div>
+      <div className="absolute left-25 top-20 w-6 h-6 rounded-full bg-blue-400 border border-white transparent-circle"></div>
       <img src={require("../src/images/bg-card-front.png")} alt="" />
-      <div style={{ left: "10%", position: "absolute", top: "80%" }}>
-        {" "}
-        {formData.name}
-      </div>
+      <div className="absolute left-10 top-80 name">{formData.name}</div>
       <div
-        style={{
-          left: "10%",
-          position: "absolute",
-          top: "50%",
-          letterSpacing: "5px",
-        }}
+        className="absolute left-10 top-50 card-number"
+        style={{ letterSpacing: "5px" }}
       >
-        {" "}
         {formData.cardNumber}
       </div>
-      <div style={{ right: "15%", position: "absolute", top: "80%" }}>
+      <div className="absolute right-15 top-80 expiration-month">
         {formData.expirationMonth}/
       </div>
-      <div style={{ right: "05%", position: "absolute", top: "80%" }}>
+      <div className="absolute right-5 top-80 expiration-year">
         {formData.expirationYear}
       </div>
     </div>

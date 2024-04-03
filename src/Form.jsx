@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css";
 
 const Form = ({
   formData,
@@ -8,16 +9,16 @@ const Form = ({
   handleFormReset,
 }) => {
   return (
-    <form style={{ color: "black" }}>
-      <div style={{ left: "60%", position: "absolute", top: "10%" }}>
-        <div className="form-control w-full max-w-xs">
+    <form className="text-black">
+      <div className="absolute right-60 top-10 form-controls">
+        <div className="mb-4 form-control">
           <label className="label">
-            <span className="label-text">Cardholder Name</span>
+            <span className="font-bold label-text">Cardholder Name</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input border-2 border-slate-200"
             required
             name="name"
             id="name"
@@ -25,14 +26,14 @@ const Form = ({
             onChange={handleChange}
           />
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="mb-4 form-control">
           <label className="label">
-            <span className="label-text">Card Number</span>
+            <span className="font-bold label-text">Card Number</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input border-2 border-slate-200"
             required
             name="cardNumber"
             id="cardNumber"
@@ -41,14 +42,14 @@ const Form = ({
             maxLength={16}
           />
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="mb-4 form-control">
           <label className="label">
-            <span className="label-text">Month</span>
+            <span className="font-bold label-text">Month</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input border-2 border-slate-200"
             required
             name="expirationMonth"
             id="expirationMonth"
@@ -57,14 +58,14 @@ const Form = ({
             maxLength={2}
           />
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="mb-4 form-control">
           <label className="label">
-            <span className="label-text">Year</span>
+            <span className="font-bold label-text">Year</span>
           </label>
           <input
             type="text"
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input border-2 border-slate-200"
             required
             name="expirationYear"
             id="expirationYear"
@@ -73,15 +74,15 @@ const Form = ({
             maxLength={4}
           />
         </div>
-        <div className="form-control w-full max-w-xs">
+        <div className="mb-4 form-control">
           <label className="label">
-            <span className="label-text">CVV</span>
+            <span className="font-bold label-text">CVV</span>
           </label>
           <input
             type="text"
             maxLength={3}
             placeholder="Type here"
-            className="input input-bordered w-full max-w-xs"
+            className="input border-2 border-slate-200"
             name="cvv"
             id="cvv"
             value={formData.cvv}
@@ -89,8 +90,7 @@ const Form = ({
           />
           <button
             type="submit"
-            style={{ marginTop: "10%" }}
-            className="btn btn-wide"
+            className="btn mt-4"
             onClick={currentStep !== 3 ? handleNextStep : handleFormReset}
           >
             Confirm

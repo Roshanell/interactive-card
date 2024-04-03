@@ -2,11 +2,9 @@ import React from "react";
 
 const CardBack = ({ formData }) => {
   return (
-    <div style={{ position: "absolute", left: "15%", top: "55%" }}>
+    <div className="absolute left-15 top-30 card-back-container">
       <img src={require("../src/images/bg-card-back.png")} alt="" />
-      <div style={{ right: "10%", position: "absolute", top: "45%" }}>
-        {formData.cvv}
-      </div>
+      <div className="absolute right-10 top-45 cvv">{formData.cvv}</div>
     </div>
   );
 };

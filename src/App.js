@@ -79,7 +79,6 @@ function App() {
           handleChange={handleChange}
           initialFormData={initialFormData}
           setFormData={setFormData}
-          // handleSubmit={handleSubmit}
           handleNextStep={handleNextStep}
           currentStep={currentStep}
           handleFormReset={handleFormReset}
